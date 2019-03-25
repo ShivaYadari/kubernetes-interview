@@ -122,8 +122,8 @@ spec:
   ports:
   - port: 3000 # browser uses this port.
     targetPort: http-server
-    nodePort: 32001 # Remove if LoadBalancer
+    
   selector:
     app: my-database-app
-  type: NodePort # LoadBalancer
+  type: LoadBalancer # LoadBalancer
 

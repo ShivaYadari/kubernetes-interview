@@ -1,4 +1,13 @@
-aws eks --region eu-west-1 update-kubeconfig --name My-EKS-cluster-name
+# S3 Bucket name:
+my-s3-bucket-interview-test
+
+#ARN Node Group role
+arn:aws:iam::418185438171:role/my-eks-NodeGroup-1AD5W39VKR28R-NodeInstanceRole-T0PAWDQAR3QY
+
+# EKS Name
+eks-my-eks
+
+aws eks --region eu-west-1 update-kubeconfig --name eks-my-eks
 
 # Step to execute
 
