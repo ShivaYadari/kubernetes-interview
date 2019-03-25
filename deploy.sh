@@ -1,8 +1,7 @@
 aws eks --region eu-west-1 update-kubeconfig --name My-EKS-cluster-name
 
 # Step to execute
-kubectl apply -f redis-master-controller.yml
-kubectl apply -f redis-master-service.yml
+
 kubectl apply -f redis-slave-controller.yml
 kubectl apply -f redis-slave-service.yml
 kubectl apply -f my-app-controller.yml
