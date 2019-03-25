@@ -2,10 +2,8 @@ aws eks --region eu-west-1 update-kubeconfig --name My-EKS-cluster-name
 
 # Step to execute
 
-kubectl apply -f redis-slave-controller.yml
-kubectl apply -f redis-slave-service.yml
-kubectl apply -f my-app-controller.yml
-kubectl apply -f my-app-service.yml
+kubectl apply -f main-deployment.yml
+
 
 # replicationcontroller scale 
 kubectl scale rc my-database-app --replicas=5
